@@ -10,8 +10,12 @@ properties:
   alias:
     type: string
     description: type of sample within a group (for example tumor, normal)
+  bam:
+    type: string
+    description: path to .bam file, with .bam.bai file in the same directory
 
 required:
   - sample_name
   - group
   - alias
+  - bam

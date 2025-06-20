@@ -1,7 +1,7 @@
 rule mosdepth_by_window:
     input:
-        bam="aligned/{sample}.bam",
-        bai="aligned/{sample}.bam.bai",
+        bam=lookup(within=samples, query="sample_name == '{sample}'", cols="bam"),
+        bai=f"{lookup(within=samples, query="sample_name == '{sample}'", cols="bam")}.bai",
     output:
         "results/mosdepth/{sample}.mosdepth.global.dist.txt",
         "results/mosdepth/{sample}.mosdepth.region.dist.txt",
