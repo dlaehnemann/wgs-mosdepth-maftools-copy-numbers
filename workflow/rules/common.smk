@@ -30,7 +30,7 @@ def final_results(wildcards):
         final_results.extend(
             expand(
                 "results/maftools/{sample}.cbs.seg",
-                sample=lookup(within=samples, cols="sample_name"),
+                sample=lookup(within=samples, query="True", cols="sample_name"),
             )
         )
     return final_results
