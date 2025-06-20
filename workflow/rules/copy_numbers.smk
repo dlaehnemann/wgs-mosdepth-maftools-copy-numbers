@@ -1,10 +1,7 @@
 rule mosdepth_by_window:
     input:
         bam=lookup(within=samples, query="sample_name == '{sample}'", cols="bam"),
-        bai=lambda wc: expand(
-            "{file}.bai",
-            file=lookup(within=samples, query="sample_name == '{wc.sample}'", cols="bam"),
-        ),
+        bai=lambda wc: f"{lookup(within=samples, query="sample_name == '{wc.sample}'", cols="bam")}.bai",
     output:
         "results/mosdepth/{sample}.mosdepth.global.dist.txt",
         "results/mosdepth/{sample}.mosdepth.region.dist.txt",
