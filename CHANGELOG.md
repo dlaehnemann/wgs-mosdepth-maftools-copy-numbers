@@ -1,5 +1,39 @@
 # Changelog
 
+## 1.0.0 (2025-06-20)
+
+
+### Features
+
+* initial version, not yet tested ([d76b258](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/d76b258b7f16461716a4e44a92e2866079094095))
+
+
+### Bug Fixes
+
+* bai file name ([d6c49c0](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/d6c49c0f56c69d82c7c54f22ebba33db1de2db84))
+* correct syntax for bai file ([9048f6e](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/9048f6ecd7dc298058e7c4398d1f2ec87bc3658a))
+* correctly name segmentation script ([e05ae59](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/e05ae596006fb87240c6fbe5c88c43407f11be7d))
+* file extension yml to yaml ([9e66fed](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/9e66fedad444f5b464ee72a43597d6016f9f55d0))
+* indexing of samplesheet ([96c6667](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/96c666798be18cbccd497d73d86a4957ff23ccbc))
+* missing query ([16d8cb6](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/16d8cb67f5318ed757822430c9c3c6095080e69b))
+* provide default True query for lookup of all samples ([a507204](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/a507204d7d7d474560c50ecb3f21c73b36913760))
+* remove unnecessary (and conflicting) output ([99b31f6](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/99b31f631fd4d307750c1ad58638c273bb1ed6ca))
+* remove unused (and wrong) ascat package ([b70a67e](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/b70a67edd3605fbd13ffc0650646506716efe1c3))
+* request final_results in rule all ([15e79d9](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/15e79d9c085acdc7e12591e68edb47de82fb62a4))
+* samples reference (instead of samplesheet) ([b7db5a2](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/b7db5a2a4750cce9d4cc4c617796faaeab383955))
+* syntax ([262081b](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/262081bded9fb2ab41d2850b62b8b233a4566ae9))
+* try different syntax ([f102690](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/f102690bdd2cb626a9576e57ca3ba68cd80e527f))
+* try lambda for lookup within expand() ([fe54271](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/fe542710254e82592ae6491c99b0ad1baf020832))
+* try lookup again, after fixing test ([455c9c7](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/455c9c75e150933df2373de3db427adb0d823dbb))
+* try samples lookup with .loc[] ([0cb2a3e](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/0cb2a3eb95e7f3b7b0a9c14da2e441ca8718c5e0))
+* try using samples index to get all samples ([d74d465](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/d74d4651e5363805d578bc7c6247b88bacfc2e4f))
+* try with input function with named inputs and unpack ([70a9dd9](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/70a9dd93835b30413a88161d763f86795f850da2))
+* try with quotes again ([f527914](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/f527914065b1f4d1dbf3b8944bc2c9d305e301a8))
+* try without lookup ([dd22a99](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/dd22a99941b4bfaf9db5a070f1d466329b136488))
+* try without quotes ([dfd3576](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/dfd3576b20b4b5bf041a91d1bfd7a7aad7a70086))
+* try without values[0] ([24eb1db](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/24eb1dbcb1ed9cd5a03b363f730e84232c4f87cb))
+* work with bam path from samples.tsv ([01a3feb](https://github.com/dlaehnemann/wgs-mosdepth-maftools-copy-numbers/commit/01a3febfb9bc77accb41d05a1d53f6b06287ddfb))
+
 ## 1.0.0 (2025-05-07)
 
 
