@@ -1,7 +1,14 @@
+def collect_mosdepth_input(wildcards):
+    bam_path = lookup(within=samples, query="sample_name == '{sample}'", cols="bam")
+    bai_path = bam_path + ".bai"
+    return {
+        "bam" : bam_path,
+        "bai" : bai_path,
+    }
+
 rule mosdepth_by_window:
     input:
-        bam=lookup(within=samples, query="sample_name == '{sample}'", cols="bam"),
-        bai=lambda wc: f"{lookup(within=samples, query="sample_name == '{wc.sample}'", cols="bam")}.bai",
+        unpack(collect_mosdepth_input)
     output:
         "results/mosdepth/{sample}.mosdepth.global.dist.txt",
         "results/mosdepth/{sample}.mosdepth.region.dist.txt",
