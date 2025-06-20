@@ -1,5 +1,5 @@
 def collect_mosdepth_input(wildcards):
-    bam_path = samples.query(f"sample_name == '{wildcards.sample}'")["bam"].values[0]
+    bam_path = samples.query(f"sample_name == '{wildcards.sample}'")["bam"]
     bai_path = bam_path + ".bai"
     return {
         "bam" : bam_path,
