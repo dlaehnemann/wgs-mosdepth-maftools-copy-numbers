@@ -30,7 +30,7 @@ def final_results(wildcards):
         final_results.extend(
             expand(
                 "results/maftools/{sample}.cbs.seg",
-                sample=samples,
+                sample=samples.loc[:,"sample_name"],
             )
         )
     return final_results
