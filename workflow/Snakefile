@@ -33,5 +33,5 @@ onerror:
 # -----------------------------------------------------
 rule all:
     input:
-        "results/multiqc/multiqc_report.html",
+        final_results
     default_target: True
