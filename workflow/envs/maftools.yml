@@ -1,0 +1,11 @@
+name: get_genome
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - bioconductor-maftools=2.22.0
+  - bioconductor-ascat=3.2.0
+  - r-fs
+  - r-stringr
+  - r-withr
