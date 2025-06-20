@@ -26,8 +26,8 @@ rule maftools_segmentation_with_background_alias:
         ),
         mosdepth_background=expand(
             "results/mosdepth/{sample}.regions.bed.gz",
-            sample=lookup(within=samples, query="sample_name == {sample}")),
-        )
+            sample=lookup(within=samples, query="sample_name == {sample}"),
+        ),
     output:
         segments="results/maftools/{group}.{alias}.cbs.seg",
         plot="results/maftools/{group}.{alias}.cbs.pdf",
