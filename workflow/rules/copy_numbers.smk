@@ -22,11 +22,11 @@ rule maftools_segmentation_with_background_alias:
     input:
         mosdepth_main=expand(
             "results/mosdepth/{sample}.regions.bed.gz",
-            sample=lookup(within=samplesheet, query="sample_name == {sample}"),
+            sample=lookup(within=samples, query="sample_name == {sample}"),
         ),
         mosdepth_background=expand(
             "results/mosdepth/{sample}.regions.bed.gz",
-            sample=lookup(within=samplesheet, ),
+            sample=lookup(within=samples, ),
         )
     output:
         segments="results/maftools/{group}.{alias}.cbs.seg",
