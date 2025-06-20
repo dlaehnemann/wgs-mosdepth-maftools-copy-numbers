@@ -9,7 +9,6 @@ rule mosdepth_by_window:
         "results/mosdepth/{sample}.mosdepth.global.dist.txt",
         "results/mosdepth/{sample}.mosdepth.region.dist.txt",
         "results/mosdepth/{sample}.regions.bed.gz",
-        "results/mosdepth/{sample}.thresholds.bed.gz",  # needs to go with params.thresholds spec
         summary="results/mosdepth/{sample}.mosdepth.summary.txt",  # this named output is required for prefix parsing
     log:
         "logs/mosdepth/{sample}.log",
