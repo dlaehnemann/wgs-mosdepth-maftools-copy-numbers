@@ -1,6 +1,6 @@
 def collect_mosdepth_input(wildcards):
     print(samples)
-    bam_path = samples.query(f"sample_name == {wildcards.sample}")["bam"]
+    bam_path = lookup(within=samples, query= "sample_name == '{wildcards.sample}'", cols="bam")
     print(bam_path)
     bai_path = bam_path + ".bai"
     return {
